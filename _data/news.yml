@@ -1,0 +1,24 @@
+- date: "2025-08-01"
+  inline: >
+    Started PhD at <a href="https://www.iastate.edu/">Iowa State University</a>,
+    advised by <a href="https://www.me.iastate.edu/faculty/soumik-sarkar/">Prof. Soumik Sarkar</a>.
+
+- date: "2025-01-01"
+  inline: >
+    Paper <strong>FAST: Font-Agnostic Scene Text Editing</strong> accepted at
+    <a href="https://wacv2025.thecvf.com/">WACV 2025</a>!
+
+- date: "2024-08-01"
+  inline: >
+    Paper <strong>FastTextSpotter</strong> accepted at
+    <a href="https://icpr2024.org/">ICPR 2024</a>!
+
+- date: "2024-01-01"
+  inline: >
+    Paper <strong>Diving into the Depths of Spotting Text in Multi-Domain Noisy Scenes</strong>
+    accepted at <a href="https://2024.ieee-icra.org/">ICRA 2024</a>!
+
+- date: "2023-10-01"
+  inline: >
+    Paper <strong>Harnessing the Power of Multi-Lingual Datasets for Pre-training</strong>
+    accepted at <a href="https://wacv2024.thecvf.com/">WACV 2024</a>!
