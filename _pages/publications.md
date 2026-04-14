@@ -2,7 +2,8 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: A list of my peer-reviewed publications spanning scene text spotting, font-agnostic text editing, wildlife conservation via computer vision, and multi-modal plant phenotyping. I publish primarily at venues including WACV, ICRA, ICPR, and journals such as Ecological Informatics and Knowledge-Based Systems.
+description: Below is a list of my research publications. My earlier work at the Indian Statisticaln Institute focused on scene text understanding — detection, recognition, and editing. My current work at Iowa State University explores multi-modal representation learning
+and AI for agricultural and biological sciences. Feel free to reach out if you have questions about any of the papers.
 nav: true
 nav_order: 2
 ---
