@@ -17,19 +17,23 @@
   bibtex_show = {true},
 }
 
-@misc{mazumder2025docgraphformer,
+@article{mazumder2025docgraphformer,
   title     = {{Doc2GraphFormer: Bridging Structured Graph Learning with Transformer Attention for Efficient Document Understanding}},
   author    = {Mazumder, Souparni and Biswas, Sanket and Pal, Aniket and Das, Alloy and Pal, Umapada and Lladós, Josep},
   year      = {2025},
+  journal   = {{Lecture notes in computer science}},
+  pages     = {506--522},
   doi       = {10.1007/978-3-032-04627-7_29},
   selected  = {false},
   bibtex_show = {true},
 }
 
-@misc{pal2025icdar,
+@article{pal2025icdar,
   title     = {{ICDAR 2025 Handwritten Notes Understanding Challenge}},
   author    = {Pal, Aniket and Biswas, Sanket and Das, Alloy and Lodh, Ayush and Banerjee, Priyanka and Chattopadhyay, Soumitri and Mondal, Ajoy and Karatzas, Dìmosthenis and Lladós, Josep and Jawahar, C. V.},
   year      = {2025},
+  journal   = {{Lecture notes in computer science}},
+  pages     = {553--567},
   doi       = {10.1007/978-3-032-04630-7_32},
   selected  = {false},
   bibtex_show = {true},
@@ -44,7 +48,7 @@
   pages     = {103161--103161},
   doi       = {10.1016/j.ecoinf.2025.103161},
   abstract  = {Mammalian hair serves as a critical biological marker, aiding species identification essential for wildlife conservation and crime control. This study introduces the first extensive benchmark for classifying microscopic images of mammal hair from species prioritized for conservation. Our goal is to develop standardized methods, metrics, and best practices for utilizing advanced computer vision techniques, including Convolutional Neural Networks (CNNs), Vision Transformers (ViTs) , and Swin Transformers, to classify hair samples across Order, Family, Genus and Species taxonomic levels. We present a novel dataset of 76 species, including critically endangered and endangered species, curated specifically for this classification challenge. The methodology integrates automated feature extraction of cuticle patterns and medulla structures, enabling high-precision species differentiation. Our findings demonstrate that Swin Transformer-based models outperform traditional CNNs and ViTs across taxonomic levels, with techniques like image cropping further improving classification accuracy by diversifying the training set. The proposed Tricho-Vision framework offers significant applications in biodiversity monitoring and wildlife crime investigation, facilitating accurate species identification from forensic hair samples. Additionally, we introduce a interactive tool for real-time taxonomic classification, showcasing the practical utility of our research and fostering broader interdisciplinary engagement in conservation science and forensic applications. • Curated dataset with 76 species for research in hair classification. • Standardized suite for evaluating Tricho-Taxonomy models. • Exhaustive tests ensure framework performance accuracy. • Real-time demo highlights practical conservation applications.},
-  selected  = {false},
+  selected  = {true},
   bibtex_show = {true},
 }
 
@@ -71,19 +75,23 @@
   bibtex_show = {true},
 }
 
-@misc{mazumder2025docgraphx,
+@article{mazumder2025docgraphx,
   title     = {{Doc2Graph-X: A Multilingual Graph-Based Framework for Form Understanding}},
   author    = {Mazumder, Souparni and Biswas, Sanket and Das, Alloy and Lladós, Josep},
   year      = {2025},
+  journal   = {{Lecture notes in computer science}},
+  pages     = {257--266},
   doi       = {10.1007/978-3-031-94139-9_24},
   selected  = {false},
   bibtex_show = {true},
 }
 
-@misc{das2024fasttextspotter,
+@article{das2024fasttextspotter,
   title     = {{FastTextSpotter: A High-Efficiency Transformer for Multilingual Scene Text Spotting}},
   author    = {Das, Alloy and Biswas, Sanket and Pal, Umapada and Lladós, Josep and Bhattacharya, Saumik},
   year      = {2024},
+  journal   = {{Lecture notes in computer science}},
+  pages     = {135--150},
   doi       = {10.1007/978-3-031-78498-9_10},
   selected  = {true},
   bibtex_show = {true},
@@ -98,28 +106,6 @@
   pages     = {112593--112593},
   doi       = {10.1016/j.knosys.2024.112593},
   abstract  = {The presence of unpredictable occlusions on natural scene text is a significant challenge, exacerbating the difficulties already posed on text detection and recognition by the variability of such images. Addressing the need for a robust, consistently performing approach that can effectively address the above challenges, this paper presents a new Soft Set-based end-to-end system for text detection, recognition and prediction in occluded natural scene images. This is the first approach to integrate text detection, recognition and prediction , unlike existing systems developed for end-to-end text spotting (text detection and recognition) only. For candidate text components detection, the proposed combination of Soft Sets with Maximally Stable Extremal Regions (SS-MSER) improves text detection and spotting in natural scene images, irrespectively of the presence of arbitrarily orientated and shaped text, complex backgrounds and occlusion. Furthermore, a Graph Recurrent Neural Network is proposed for grouping candidate text components into text lines and for fitting accurate bounding boxes to each word. Finally, a Convolutional Recurrent Neural Network (CRNN) is proposed for the recognition of text and for predicting missing characters due to occlusion. Experimental results on a new occluded scene text dataset (OSTD) and on the most relevant benchmark natural scene text datasets demonstrate that the proposed system outperforms the state-of-the-art in text detection, recognition and prediction. The code and dataset are available at https://github.com/alloydas/Softset-MSER-Based-Occluded-Scene-Text-Spotting/blob/master/Soft\_set\_MSER.ipynb},
-  selected  = {false},
-  bibtex_show = {true},
-}
-
-@misc{das2024fasttextspotter,
-  title     = {{FastTextSpotter: A High-Efficiency Transformer for Multilingual Scene Text Spotting}},
-  author    = {Das, Alloy and Biswas, Sanket and Pal, Umapada and Lladós, Josep and Bhattacharya, Saumik},
-  year      = {2024},
-  doi       = {10.48550/arxiv.2408.14998},
-  html      = {https://arxiv.org/pdf/2408.14998},
-  abstract  = {The proliferation of scene text in both structured and unstructured environments presents significant challenges in optical character recognition (OCR), necessitating more efficient and robust text spotting solutions. This paper presents FastTextSpotter, a framework that integrates a Swin Transformer visual backbone with a Transformer Encoder-Decoder architecture, enhanced by a novel, faster self-attention unit, SAC2, to improve processing speeds while maintaining accuracy. FastTextSpotter has been validated across multiple datasets, including ICDAR2015 for regular texts and CTW1500 and TotalText for arbitrary-shaped texts, benchmarking against current state-of-the-art models. Our results indicate that FastTextSpotter not only achieves superior accuracy in detecting and recognizing multilingual scene text (English and Vietnamese) but also improves model efficiency, thereby setting new benchmarks in the field. This study underscores the potential of advanced transformer architectures in improving the adaptability and speed of text spotting applications in diverse real-world settings. The dataset, code, and pre-trained models have been released in our Github.},
-  selected  = {true},
-  bibtex_show = {true},
-}
-
-@misc{das2024automatic,
-  title     = {{Automatic Detection of COVID-19 from Chest X-ray Images Using Deep Learning Model}},
-  author    = {Das, Alloy and Agarwal, Rohit and Singh, Rituparna and Chowdhury, Arindam and Nandi, Debashis},
-  year      = {2024},
-  doi       = {10.48550/arxiv.2408.14927},
-  html      = {https://arxiv.org/pdf/2408.14927},
-  abstract  = {The infectious disease caused by novel corona virus (2019-nCoV) has been widely spreading since last year and has shaken the entire world. It has caused an unprecedented effect on daily life, global economy and public health. Hence this disease detection has life-saving importance for both patients as well as doctors. Due to limited test kits, it is also a daunting task to test every patient with severe respiratory problems using conventional techniques (RT-PCR). Thus implementing an automatic diagnosis system is urgently required to overcome the scarcity problem of Covid-19 test kits at hospital, health care systems. The diagnostic approach is mainly classified into two categories-laboratory based and Chest radiography approach. In this paper, a novel approach for computerized corona virus (2019-nCoV) detection from lung x-ray images is presented. Here, we propose models using deep learning to show the effectiveness of diagnostic systems. In the experimental result, we evaluate proposed models on publicly available data-set which exhibit satisfactory performance and promising results compared with other previous existing methods.},
   selected  = {false},
   bibtex_show = {true},
 }
@@ -160,45 +146,16 @@
   bibtex_show = {true},
 }
 
-@misc{das2024trichovision,
-  title     = {{Tricho-Vision: The Use of Computer Vision in Trichotaxonomy for Enhancing Wildlife Conservation of Priority Species}},
-  author    = {Das, Alloy and Banerjee, Priyanka and Biswas, Sanket and Kamalakannan, Manokaran and Chattopadhyay, Joydev and Banerjee, Dhriti and Mukherjee, Tanoy},
-  year      = {2024},
-  doi       = {10.2139/ssrn.5069883},
+@article{das2022automatic,
+  title     = {{Automatic detection of COVID-19 from chest x-ray images using deep learning model}},
+  author    = {Das, Alloy and Agarwal, Rohit and Singh, Rituparna and Chowdhury, Arindam and Nandi, Debashis},
+  year      = {2022},
+  journal   = {{AIP conference proceedings}},
+  volume    = {2424},
+  pages     = {040003--040003},
+  doi       = {10.1063/5.0076882},
+  abstract  = {The infectious disease caused by novel coronavirus (2019-nCoV) has been widely spreading since last year and has shaken the entire world. It has caused an unprecedented effect on daily life, global economy and public health. Hence this disease detection has life-saving importance for both patients as well as doctors. Due to limited test kits, it is also a daunting task to test every patient with severe respiratory problems using conventional techniques (RT-PCR) . Thus implementing an automatic diagnosis system is urgently required to overcome the scarcity problem of Covid-19 test kits at hospital, health care systems. The diagnostic approach is mainly classified into two categories-laboratory based and Chest radiography approach. In this paper, a novel approach for computerized coronavirus (2019-nCoV) detection from lung x-ray images is presented. Here, we propose models using deep learning to show the effectiveness of diagnostic systems. In the experimental result, we evaluate proposed models on publicly available data-set which exhibit satisfactory performance and promising results compared with other previous existing methods.},
   selected  = {false},
-  bibtex_show = {true},
-}
-
-@misc{das2023harnessing,
-  title     = {{Harnessing the Power of Multi-Lingual Datasets for Pre-training: Towards Enhancing Text Spotting Performance}},
-  author    = {Das, Alloy and Biswas, Sanket and Banerjee, Ayan and Lladós, Josep and Pal, Umapada and Bhattacharya, Saumik},
-  year      = {2023},
-  doi       = {10.48550/arxiv.2310.00917},
-  html      = {https://arxiv.org/pdf/2310.00917},
-  abstract  = {The adaptation capability to a wide range of domains is crucial for scene text spotting models when deployed to real-world conditions. However, existing state-of-the-art (SOTA) approaches usually incorporate scene text detection and recognition simply by pretraining on natural scene text datasets, which do not directly exploit the intermediate feature representations between multiple domains. Here, we investigate the problem of domain-adaptive scene text spotting, i.e., training a model on multi-domain source data such that it can directly adapt to target domains rather than being specialized for a specific domain or scenario. Further, we investigate a transformer baseline called Swin-TESTR to focus on solving scene-text spotting for both regular and arbitrary-shaped scene text along with an exhaustive evaluation. The results clearly demonstrate the potential of intermediate representations to achieve significant performance on text spotting benchmarks across multiple domains (e.g. language, synth-to-real, and documents). both in terms of accuracy and efficiency.},
-  selected  = {true},
-  bibtex_show = {true},
-}
-
-@misc{das2023diving,
-  title     = {{Diving into the Depths of Spotting Text in Multi-Domain Noisy Scenes}},
-  author    = {Das, Alloy and Biswas, Sanket and Pal, Umapada and Lladós, Josep},
-  year      = {2023},
-  doi       = {10.48550/arxiv.2310.00558},
-  html      = {https://arxiv.org/pdf/2310.00558},
-  abstract  = {When used in a real-world noisy environment, the capacity to generalize to multiple domains is essential for any autonomous scene text spotting system. However, existing state-of-the-art methods employ pretraining and fine-tuning strategies on natural scene datasets, which do not exploit the feature interaction across other complex domains. In this work, we explore and investigate the problem of domain-agnostic scene text spotting, i.e., training a model on multi-domain source data such that it can directly generalize to target domains rather than being specialized for a specific domain or scenario. In this regard, we present the community a text spotting validation benchmark called Under-Water Text (UWT) for noisy underwater scenes to establish an important case study. Moreover, we also design an efficient super-resolution based end-to-end transformer baseline called DA-TextSpotter which achieves comparable or superior performance over existing text spotting architectures for both regular and arbitrary-shaped scene text spotting benchmarks in terms of both accuracy and model efficiency. The dataset, code and pre-trained models will be released upon acceptance.},
-  selected  = {true},
-  bibtex_show = {true},
-}
-
-@misc{das2023faster,
-  title     = {{FASTER: A Font-Agnostic Scene Text Editing and Rendering Framework}},
-  author    = {Das, Alloy and Sanket, Biswas, and Roy, Prasun Kumar and Ghosh, Subhankar and Pal, Umapada and Blumenstein, Michael and Josep, Lladós, and Bhattacharya, Saumik},
-  year      = {2023},
-  doi       = {10.48550/arxiv.2308.02905},
-  html      = {https://arxiv.org/pdf/2308.02905},
-  abstract  = {Scene Text Editing (STE) is a challenging research problem, that primarily aims towards modifying existing texts in an image while preserving the background and the font style of the original text. Despite its utility in numerous real-world applications, existing style-transfer-based approaches have shown sub-par editing performance due to (1) complex image backgrounds, (2) diverse font attributes, and (3) varying word lengths within the text. To address such limitations, in this paper, we propose a novel font-agnostic scene text editing and rendering framework, named FASTER, for simultaneously generating text in arbitrary styles and locations while preserving a natural and realistic appearance and structure. A combined fusion of target mask generation and style transfer units, with a cascaded self-attention mechanism has been proposed to focus on multi-level text region edits to handle varying word lengths. Extensive evaluation on a real-world database with further subjective human evaluation study indicates the superiority of FASTER in both scene text editing and rendering tasks, in terms of model performance and efficiency. Our code will be released upon acceptance.},
-  selected  = {true},
   bibtex_show = {true},
 }
 
@@ -215,23 +172,12 @@
   bibtex_show = {true},
 }
 
-@article{das2022automatic,
-  title     = {{Automatic detection of COVID-19 from chest x-ray images using deep learning model}},
-  author    = {Das, Alloy and Agarwal, Rohit and Singh, Rituparna and Chowdhury, Arindam and Nandi, Debashis},
-  year      = {2022},
-  journal   = {{AIP conference proceedings}},
-  volume    = {2424},
-  pages     = {040003--040003},
-  doi       = {10.1063/5.0076882},
-  abstract  = {The infectious disease caused by novel coronavirus (2019-nCoV) has been widely spreading since last year and has shaken the entire world. It has caused an unprecedented effect on daily life, global economy and public health. Hence this disease detection has life-saving importance for both patients as well as doctors. Due to limited test kits, it is also a daunting task to test every patient with severe respiratory problems using conventional techniques (RT-PCR) . Thus implementing an automatic diagnosis system is urgently required to overcome the scarcity problem of Covid-19 test kits at hospital, health care systems. The diagnostic approach is mainly classified into two categories-laboratory based and Chest radiography approach. In this paper, a novel approach for computerized coronavirus (2019-nCoV) detection from lung x-ray images is presented. Here, we propose models using deep learning to show the effectiveness of diagnostic systems. In the experimental result, we evaluate proposed models on publicly available data-set which exhibit satisfactory performance and promising results compared with other previous existing methods.},
-  selected  = {false},
-  bibtex_show = {true},
-}
-
-@misc{chowdhury2021unet,
+@article{chowdhury2021unet,
   title     = {{U-Net Based Optic Cup and Disk Segmentation from Retinal Fundus Images via Entropy Sampling}},
   author    = {Chowdhury, Arindam and Agarwal, Rohit and Das, Alloy and Nandi, Debashis},
   year      = {2021},
+  journal   = {{Advances in intelligent systems and computing}},
+  pages     = {479--489},
   doi       = {10.1007/978-981-16-4369-9_47},
   selected  = {false},
   bibtex_show = {true},
