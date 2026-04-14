@@ -15,6 +15,7 @@ group :jekyll_plugins do
   gem 'jekyll-paginate-v2'
   gem 'jekyll-scholar'
   gem 'jekyll-sitemap'
+  gem 'jekyll-socials' 
   gem 'jekyll-tabs'
   gem 'jekyll-terser', git: 'https://github.com/RobertoJBeltran/jekyll-terser.git'
   gem 'jekyll-toc'
