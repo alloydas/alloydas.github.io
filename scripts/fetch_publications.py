@@ -1,9 +1,9 @@
 """
 fetch_publications.py
 ─────────────────────
-Fetches all publications for Alloy Das from the OpenAlex API
-and writes a BibTeX file to _bibliography/papers.bib
-for use with al-folio + jekyll-scholar.
+Fetches all publications for Alloy Das from the OpenAlex API,
+deduplicates arXiv preprints vs published versions,
+and writes a BibTeX file to _bibliography/papers.bib.
 
 Usage:
     python scripts/fetch_publications.py
@@ -11,7 +11,6 @@ Usage:
 Requires: requests  (pip install requests)
 """
 
-import json
 import re
 import time
 import requests
@@ -26,25 +25,29 @@ HEADERS            = {"User-Agent": f"al-folio-fetcher/1.0 (mailto:{EMAIL})"}
 
 # Papers to highlight on homepage (selected: true)
 SELECTED_TITLES_KEYWORDS = [
-    "FAST",
+    "FASTER",
     "FastTextSpotter",
     "Diving into the Depths",
     "Harnessing the Power",
+    "Tricho-Vision",
 ]
+
+# Sources considered as preprint servers (lower priority)
+PREPRINT_SOURCES = {"arxiv", "ssrn", "biorxiv", "medrxiv", "researchsquare"}
 # ─────────────────────────────────────────────────────────────────────────────
 
 
 def fetch_all_works(author_id: str) -> list:
     """Fetch all works for this author, handling pagination."""
     works = []
-    url = (
-        f"{BASE_URL}/works"
+    base_params = (
         f"?filter=author.id:{author_id}"
         f"&sort=publication_year:desc"
         f"&per_page=100"
         f"&select=id,title,authorships,publication_year,primary_location,"
         f"doi,type,biblio,open_access,best_oa_location,ids,abstract_inverted_index"
     )
+    url = f"{BASE_URL}/works{base_params}"
     page = 1
     while url:
         resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -55,20 +58,81 @@ def fetch_all_works(author_id: str) -> list:
         print(f"  Page {page}: fetched {len(batch)} works (total: {len(works)})")
         cursor = data.get("meta", {}).get("next_cursor")
         if cursor:
-            url = (
-                f"{BASE_URL}/works"
-                f"?filter=author.id:{author_id}"
-                f"&sort=publication_year:desc"
-                f"&per_page=100"
-                f"&select=id,title,authorships,publication_year,primary_location,"
-                f"doi,type,biblio,open_access,best_oa_location,ids,abstract_inverted_index"
-                f"&cursor={cursor}"
-            )
+            url = f"{BASE_URL}/works{base_params}&cursor={cursor}"
             page += 1
             time.sleep(0.2)
         else:
             break
     return works
+
+
+def normalize_title(title: str) -> str:
+    """Normalize title for deduplication comparison."""
+    if not title:
+        return ""
+    t = title.lower()
+    t = re.sub(r"[^a-z0-9\s]", "", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def is_preprint(work: dict) -> bool:
+    """Return True if this work is a preprint (arXiv, SSRN, etc.)."""
+    loc = work.get("primary_location") or {}
+    source = loc.get("source") or {}
+    source_name = (source.get("display_name") or "").lower()
+    doi = (work.get("doi") or "").lower()
+
+    for ps in PREPRINT_SOURCES:
+        if ps in source_name:
+            return True
+    if "10.48550" in doi:  # arXiv DOI prefix
+        return True
+    if "10.2139" in doi:   # SSRN DOI prefix
+        return True
+    if work.get("type") == "preprint":
+        return True
+    return False
+
+
+def deduplicate_works(works: list) -> list:
+    """
+    For each group of works with the same normalized title,
+    keep only the best one — preferring published over preprint.
+    """
+    groups: dict[str, list] = {}
+    for work in works:
+        key = normalize_title(work.get("title", ""))
+        if not key:
+            continue
+        groups.setdefault(key, []).append(work)
+
+    deduped = []
+    for key, group in groups.items():
+        if len(group) == 1:
+            deduped.append(group[0])
+            continue
+
+        published = [w for w in group if not is_preprint(w)]
+        preprints  = [w for w in group if is_preprint(w)]
+
+        if published:
+            def venue_score(w):
+                loc = w.get("primary_location") or {}
+                source = loc.get("source") or {}
+                name = source.get("display_name") or ""
+                return 2 if name else 1
+
+            best = max(published, key=lambda w: (venue_score(w), w.get("publication_year", 0)))
+            deduped.append(best)
+            removed = [w.get("title") for w in group if w is not best]
+            print(f"  [dedup] Kept: '{best.get('title')}' | Removed duplicates: {len(removed)}")
+        else:
+            best = max(preprints, key=lambda w: w.get("publication_year", 0))
+            deduped.append(best)
+
+    print(f"\n✅ After deduplication: {len(deduped)} unique works (from {len(works)} total)")
+    return deduped
 
 
 def reconstruct_abstract(inverted_index) -> str:
@@ -130,13 +194,12 @@ def get_venue(work: dict):
     loc = work.get("primary_location") or {}
     source = loc.get("source") or {}
     venue_name = source.get("display_name", "")
-    source_type = source.get("type", "")
     work_type = work.get("type", "article")
     if work_type in ("proceedings-article", "paper-conference"):
         return venue_name, "inproceedings"
-    if source_type == "journal" or work_type == "article":
-        return venue_name, "article"
-    return venue_name, "misc"
+    if work_type == "preprint":
+        return venue_name, "misc"
+    return venue_name, "article"
 
 
 def is_selected(title: str) -> bool:
@@ -202,16 +265,18 @@ def main():
 
     print("📚 Fetching works...")
     works = fetch_all_works(OPENALEX_AUTHOR_ID)
-    print(f"\n✅ Total works found: {len(works)}")
+    print(f"\n📄 Total works fetched: {len(works)}")
+
+    print("\n🔧 Deduplicating preprints vs published versions...")
+    works = deduplicate_works(works)
+
+    works.sort(key=lambda w: w.get("publication_year", 0), reverse=True)
 
     if not works:
         print("⚠️  No works found.")
         return
 
-    bib_entries = []
-    for i, work in enumerate(works):
-        entry = work_to_bibtex(work, i)
-        bib_entries.append(entry)
+    bib_entries = [work_to_bibtex(w, i) for i, w in enumerate(works)]
 
     header = (
         "% ─────────────────────────────────────────────────────────────────\n"
@@ -224,7 +289,7 @@ def main():
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(header + "\n\n".join(bib_entries), encoding="utf-8")
-    print(f"\n✅ Written {len(bib_entries)} entries to {OUTPUT_PATH}")
+    print(f"\n✅ Written {len(bib_entries)} unique entries to {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":
