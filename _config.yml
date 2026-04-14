@@ -174,7 +174,7 @@ filtered_bibtex_keywords:
   [abbr, abstract, award, award_name, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
 
 # Maximum number of authors to show before "et al."
-max_author_limit: 3
+max_author_limit: 10
 more_authors_animation_delay: 10
 
 # Enables or disables the dark mode toggle
