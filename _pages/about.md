@@ -1,13 +1,13 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: >
   PhD Student · <a href="https://www.iastate.edu/">Iowa State University</a> ·
   Advised by <a href="https://www.me.iastate.edu/faculty/soumik-sarkar/">Prof. Soumik Sarkar</a>
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false
   more_info: >
