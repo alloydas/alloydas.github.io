@@ -14,6 +14,7 @@ _data/citations.yml
 _config.yml
 _pages/about.md
 _pages/publications.md
+_pages/cv.md
 .github/workflows/jekyll.yml
 CUSTOMIZE.md
 vendor/
