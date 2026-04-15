@@ -7,7 +7,7 @@ subtitle: >
   Advised by <a href="https://www.me.iastate.edu/faculty/soumik-sarkar/">Prof. Soumik Sarkar</a>
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
   image_circular: false
   more_info: >
@@ -19,7 +19,7 @@ selected_papers: true
 social: true
 ---
 
-I am a PhD student in the [Department of Mechanical Engineering](https://www.me.iastate.edu/) at **Iowa State University**, working in the [mech-ai lab](https://web.me.iastate.edu/soumiks/) under the supervision of [Prof. Soumik Sarkar](https://www.me.iastate.edu/faculty/soumik-sarkar/).
+I am a PhD student in the [Department of Mechanical Engineering](https://www.me.iastate.edu/) at **Iowa State University**, working in the [SCSLab](https://sites.google.com/view/scslab-isu/home) under the supervision of [Prof. Soumik Sarkar](https://www.me.iastate.edu/faculty/soumik-sarkar/).
 
 My research lies at the intersection of **computer vision**, **multi-modal representation learning**, and **agricultural AI**. I am currently working on:
 
