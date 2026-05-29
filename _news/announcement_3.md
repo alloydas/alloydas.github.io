@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-07-01 09:00:00-0600
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Joined the [SCSLab](https://sites.google.com/view/scslab-isu/home) at Iowa State University as a PhD student in Mechanical Engineering, working with Prof. Soumik Sarkar on multi-modal plant phenotyping and agricultural AI.
