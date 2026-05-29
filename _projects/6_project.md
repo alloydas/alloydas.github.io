@@ -2,7 +2,7 @@
 layout: page
 title: Soft-set MSER Text System
 description: Occluded scene text detection, recognition, and prediction
-img:
+img: assets/img/softset_mser.jpg
 importance: 6
 category: work
 ---
