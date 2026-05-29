@@ -2,6 +2,11 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 
+# Pin sass-embedded below 1.100.0: that release's native build requires
+# JSON::Fragment (json gem >= 2.9.0), which Ruby 3.1.6 (used in CI) does not
+# ship, breaking `bundle install`. 1.99.x builds cleanly.
+gem 'sass-embedded', '~> 1.99.0'
+
 # Core plugins that directly affect site building
 group :jekyll_plugins do
   gem 'jekyll-archives'
