@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper accepted at **WACV 2024** — *FastTextSpotter: A High-Efficiency Transformer for Multilingual Scene Text Spotting* (with Sanket Biswas, Umapada Pal, Josep Lladós, Saumik Bhattacharya).
+Paper accepted at **WACV 2024** — _FastTextSpotter: A High-Efficiency Transformer for Multilingual Scene Text Spotting_ (with Sanket Biswas, Umapada Pal, Josep Lladós, Saumik Bhattacharya).

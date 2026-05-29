@@ -18,6 +18,6 @@ category: work
 
 ### Publication
 
-Das, A., Biswas, S., Pal, U., Lladós, J., Bhattacharya, S. *FastTextSpotter: A High-Efficiency Transformer for Multilingual Scene Text Spotting.* WACV 2024.
+Das, A., Biswas, S., Pal, U., Lladós, J., Bhattacharya, S. _FastTextSpotter: A High-Efficiency Transformer for Multilingual Scene Text Spotting._ WACV 2024.
 
 Work done at [CVPRU, Indian Statistical Institute Kolkata](https://cvpru.isical.ac.in/).

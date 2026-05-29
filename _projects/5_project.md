@@ -21,4 +21,4 @@ Manual identification of species via trichome analysis is time-consuming and req
 
 ### Publication
 
-Das, A., Banerjee, P., Biswas, S. et al. *Tricho-Vision: The use of computer vision in trichotaxonomy for enhancing wildlife conservation of priority species.* Ecological Informatics, 2025.
+Das, A., Banerjee, P., Biswas, S. et al. _Tricho-Vision: The use of computer vision in trichotaxonomy for enhancing wildlife conservation of priority species._ Ecological Informatics, 2025.

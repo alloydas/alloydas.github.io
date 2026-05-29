@@ -22,4 +22,4 @@ Scene text in the wild is often partially occluded by objects, shadows, or degra
 
 ### Publication
 
-Das, A., Shivakumara, P., Banerjee, A., Antonacopoulos, A., Pal, U. *Soft set-based MSER end-to-end system for occluded scene text detection, recognition and prediction.* Knowledge-Based Systems, 2024.
+Das, A., Shivakumara, P., Banerjee, A., Antonacopoulos, A., Pal, U. _Soft set-based MSER end-to-end system for occluded scene text detection, recognition and prediction._ Knowledge-Based Systems, 2024.

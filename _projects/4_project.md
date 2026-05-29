@@ -22,4 +22,4 @@ Existing text editing methods require font labels or rely on style transfer that
 
 ### Publication
 
-Das, A. et al. *FASTER: A Font-Agnostic Scene Text Editing and Rendering Framework.* WACV 2025.
+Das, A. et al. _FASTER: A Font-Agnostic Scene Text Editing and Rendering Framework._ WACV 2025.

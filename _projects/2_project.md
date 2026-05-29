@@ -23,7 +23,7 @@ The LCA module is inserted into the SAM image encoder. It:
 
 ### Publications
 
-- Preprint (2026): *Lighting-aware Unified Model for Instance Segmentation* — Liu, Das et al.
+- Preprint (2026): _Lighting-aware Unified Model for Instance Segmentation_ — Liu, Das et al.
 
 ### Status
 
