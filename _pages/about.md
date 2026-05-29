@@ -37,7 +37,7 @@ I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journa
 ## Research at a Glance
 
 <div class="row mt-3">
-  <div class="col-sm-6">
+  <div class="col-sm-6" markdown="1">
 
 **Publication Timeline**
 
@@ -80,7 +80,7 @@ I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journa
 ```
 
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-6" markdown="1">
 
 **Research Skills**
 
@@ -119,7 +119,7 @@ I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journa
 </div>
 
 <div class="row mt-2">
-  <div class="col-sm-12">
+  <div class="col-sm-12" markdown="1">
 
 **Publication Venues**
 
