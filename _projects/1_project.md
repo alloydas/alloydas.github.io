@@ -2,7 +2,7 @@
 layout: page
 title: EmbodiedMAE
 description: Multi-modal Masked Autoencoder for 3D Plant Phenotyping
-img: assets/img/12.jpg
+img: assets/img/embodiedmae.jpg
 importance: 1
 category: work
 related_publications: false

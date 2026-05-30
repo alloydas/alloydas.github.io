@@ -1,7 +1,7 @@
 cv:
   name: Alloy Das
-  label: PhD Student in Computer Science
-  email: alloyuit@gmail.com
+  label: PhD Student in Mechanical Engineering (Computer Vision / AI)
+  email: alloydas@iastate.edu
   location: Ames, Iowa, USA
   image: ""
   summary: >
@@ -27,7 +27,7 @@ cv:
         url: https://www.iastate.edu/
         area: Mechanical Engineering (Computer Vision / AI)
         studyType: PhD
-        start_date: 2024
+        start_date: 2025
         end_date: present
         highlights:
           - "Advisor: Prof. Soumik Sarkar (SCSLab)"
@@ -47,9 +47,10 @@ cv:
         position: PhD Research Assistant
         location: Ames, Iowa, USA
         url: https://sites.google.com/view/scslab-isu/home
-        start_date: 2024
+        start_date: 2025
         end_date: present
         highlights:
+          - "Advisor: Prof. Soumik Sarkar"
           - "EmbodiedMAE — multi-modal masked autoencoder for 3D Sorghum plant reconstruction from RGB, depth, and point cloud data"
           - "Lighting-aware instance segmentation — custom Lighting Convolutional Attention (LCA) module extending SAM"
 
@@ -66,7 +67,7 @@ cv:
 
     Awards:
       - title: Peer Reviewer
-        date: 2024
+        date: 2026
         awarder: The Visual Computer (Springer)
         summary: Invited reviewer for Springer's journal on computer graphics and vision.
 
