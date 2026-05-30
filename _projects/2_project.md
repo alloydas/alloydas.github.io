@@ -60,7 +60,7 @@ mIoU under lighting-variant (V) conditions — the lightweight LCA adapter recov
 
 ### Qualitative Segmentation
 
-{% include figure.liquid loading="eager" path="assets/img/lca_results.jpg" class="img-fluid rounded z-depth-1" caption="Low-contrast scene: the SAM baseline floods the hillside with false positives (IoU 0.007) while LCA isolates the target instance (IoU 0.585)." %}
+{% include figure.liquid loading="eager" path="assets/img/lca_compare.jpg" class="img-fluid rounded z-depth-1" caption="Low-contrast scene: the SAM baseline floods the hillside with false positives (IoU 0.007) while LCA isolates the target instance (IoU 0.585)." %}
 
 ### Publications
 
