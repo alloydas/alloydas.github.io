@@ -62,3 +62,5 @@ Semantic Entity Recognition (SER) and Relation Extraction (RE) F1 on FUNSD — D
 ### Publication
 
 Mazumder, S., Biswas, S., Pal, A., Das, A., Pal, U., Lladós, J. _Doc2GraphFormer: Bridging Structured Graph Learning with Transformer Attention for Efficient Document Understanding._ ICDAR 2025.
+
+Work done at [Habitat Lens Private Limited](https://habitatlens.in/).

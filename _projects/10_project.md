@@ -59,3 +59,5 @@ Final leaderboard (Evidence-Based VQA) — even the best systems score low ANLS\
 ### Publication
 
 Pal, A., Biswas, S., Das, A. et al. _ICDAR 2025 Handwritten Notes Understanding Challenge._ ICDAR 2025.
+
+Work done at [Habitat Lens Private Limited](https://habitatlens.in/).

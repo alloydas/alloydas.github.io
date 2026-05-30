@@ -62,3 +62,5 @@ Multilingual SER F1 (fine-tune on 8 languages) — Doc2Graph-X matches or beats 
 ### Publication
 
 Mazumder, S., Biswas, S., Das, A., Lladós, J. _Doc2Graph-X: A Multilingual Graph-Based Framework for Form Understanding._ GbR 2025.
+
+Work done at [Habitat Lens Private Limited](https://habitatlens.in/).
