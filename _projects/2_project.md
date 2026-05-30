@@ -69,3 +69,5 @@ mIoU under lighting-variant (V) conditions — the lightweight LCA adapter recov
 ### Status
 
 Preprint available. Experiments run on custom agricultural datasets and standard COCO benchmarks.
+
+Work done at [SCSLab, Iowa State University](https://sites.google.com/view/scslab-isu/home).
