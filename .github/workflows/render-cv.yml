@@ -1,14 +1,11 @@
 name: Render a CV
+# NOTE: the push auto-trigger is intentionally disabled. This repo's
+# _data/cv.yml uses al-folio's flexible CV-layout format (custom fields like
+# studyType, awarder, level, icon), which RenderCV (v1 and v2) cannot validate
+# — so `rendercv render` fails on every cv.yml change. The /cv/ page renders
+# from cv.yml directly and the CV PDF is maintained manually, so RenderCV's
+# output is unused here. Left as manual-only; run via "Run workflow" if needed.
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
   workflow_call:
   workflow_dispatch:
 permissions:
