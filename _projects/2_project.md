@@ -2,7 +2,7 @@
 layout: page
 title: Lighting-Robust Instance Segmentation
 description: SAM extended with a Lighting Convolutional Attention module
-img: assets/img/3.jpg
+img: assets/img/lca.jpg
 importance: 2
 category: work
 ---
