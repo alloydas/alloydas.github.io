@@ -65,3 +65,5 @@ Evidence-Based VQA — even the strongest VLMs trail far behind the human baseli
 ### Publication
 
 Pal, A., Biswas, S., Das, A. et al. _NoTeS-Bank: Benchmarking Neural Transcription and Search for Scientific Notes Understanding._ 2025. (arXiv:2504.09249)
+
+Work done at [Habitat Lens Private Limited](https://habitatlens.in/).
