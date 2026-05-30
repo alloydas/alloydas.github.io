@@ -57,7 +57,7 @@ Semantic Entity Recognition (SER) and Relation Extraction (RE) F1 on FUNSD — D
 
 ### Qualitative Results
 
-{% include figure.liquid loading="eager" path="assets/img/doc2graphformer_results.jpg" class="img-fluid rounded z-depth-1" caption="Semantic Entity Recognition — predicted entity boxes on form documents (green = correct, red = incorrect)." %}
+{% include figure.liquid loading="eager" path="assets/img/doc2graphformer_ser.jpg" class="img-fluid rounded z-depth-1" caption="Semantic Entity Recognition — predicted entity boxes on form documents (green = correct, red = incorrect)." %}
 
 ### Publication
 
