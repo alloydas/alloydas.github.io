@@ -60,6 +60,10 @@ Validation metrics at the best epoch (2280) vs. the final epoch (2400):
 }
 ```
 
+### Reconstruction Gallery
+
+{% include figure.liquid loading="eager" path="assets/img/embodiedmae_results.jpg" class="img-fluid rounded z-depth-1" caption="Reconstruction gallery over 15 validation plants — RGB / depth ground-truth, masked input, model reconstructions, and recovered point clouds." %}
+
 ### Status
 
 Active development. Part of PhD research at [SCSLab, Iowa State University](https://sites.google.com/view/scslab-isu/home).

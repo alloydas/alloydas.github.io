@@ -51,6 +51,10 @@ Detection F-measure and end-to-end H-mean (full lexicon) versus state-of-the-art
 }
 ```
 
+### Qualitative Results
+
+{% include figure.liquid loading="eager" path="assets/img/fts_results.jpg" class="img-fluid rounded z-depth-1" caption="Detected and recognized text on Total-Text, CTW1500, ICDAR-15, and VinText scenes." %}
+
 ### Publication
 
 Das, A., Biswas, S., Pal, U., Lladós, J., Bhattacharya, S. _FastTextSpotter: A High-Efficiency Transformer for Multilingual Scene Text Spotting._ ICPR 2024. (arXiv:2408.14998)

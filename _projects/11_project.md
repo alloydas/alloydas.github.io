@@ -53,6 +53,10 @@ On the new Under-Water Text (UWT) benchmark, DA-TextSpotter more than doubles en
 }
 ```
 
+### Qualitative Results
+
+{% include figure.liquid loading="eager" path="assets/img/icra_results.jpg" class="img-fluid rounded z-depth-1" caption="Qualitative text spotting across natural-scene and noisy underwater (UWT) images." %}
+
 ### Publication
 
 Das, A., Biswas, S., Pal, U., Lladós, J. _Diving into the Depths of Spotting Text in Multi-Domain Noisy Scenes._ ICRA 2024. (arXiv:2310.00558)

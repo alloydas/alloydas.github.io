@@ -55,6 +55,10 @@ Semantic Entity Recognition (SER) and Relation Extraction (RE) F1 on FUNSD — D
 }
 ```
 
+### Qualitative Results
+
+{% include figure.liquid loading="eager" path="assets/img/doc2graphformer_results.jpg" class="img-fluid rounded z-depth-1" caption="Semantic Entity Recognition — predicted entity boxes on form documents (green = correct, red = incorrect)." %}
+
 ### Publication
 
 Mazumder, S., Biswas, S., Pal, A., Das, A., Pal, U., Lladós, J. _Doc2GraphFormer: Bridging Structured Graph Learning with Transformer Attention for Efficient Document Understanding._ ICDAR 2025.

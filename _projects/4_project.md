@@ -59,6 +59,10 @@ FASTER cuts FID (perceptual distance, lower is better) to less than a third of t
 }
 ```
 
+### Qualitative Results
+
+{% include figure.liquid loading="eager" path="assets/img/faster_results.jpg" class="img-fluid rounded z-depth-1" caption="Scene-text-editing results — target text rendered into natural images while preserving font style and background texture." %}
+
 ### Publication
 
 Das, A. et al. _FASTER: A Font-Agnostic Scene Text Editing and Rendering Framework._ WACV 2025. (arXiv:2308.02905)

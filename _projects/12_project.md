@@ -50,6 +50,10 @@ Detection H-mean across standard benchmarks plus low-resource Vietnamese (VinTex
 }
 ```
 
+### Qualitative Results
+
+{% include figure.liquid loading="eager" path="assets/img/wacv_results.jpg" class="img-fluid rounded z-depth-1" caption="Qualitative spotting results with feature maps across Total-Text, CTW1500, ICDAR, VinText, MLT, and ReCTS." %}
+
 ### Publication
 
 Das, A., Biswas, S., Banerjee, A., Lladós, J., Pal, U., Bhattacharya, S. _Harnessing the Power of Multi-Lingual Datasets for Pre-training: Towards Enhancing Text Spotting Performance._ WACV 2024. (arXiv:2310.00917)

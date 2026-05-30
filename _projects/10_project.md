@@ -52,6 +52,10 @@ Final leaderboard (Evidence-Based VQA) — even the best systems score low ANLS\
 }
 ```
 
+### Dataset Samples
+
+{% include figure.liquid loading="eager" path="assets/img/hnu_results.jpg" class="img-fluid rounded z-depth-1" caption="Sample handwritten STEM notes with example questions and answer-type labels from the HNU dataset." %}
+
 ### Publication
 
 Pal, A., Biswas, S., Das, A. et al. _ICDAR 2025 Handwritten Notes Understanding Challenge._ ICDAR 2025.

@@ -56,4 +56,8 @@ chart:
 }
 ```
 
+### Seizure Duration Distribution
+
+{% include figure.liquid loading="eager" path="assets/img/eeg_results.jpg" class="img-fluid rounded z-depth-1" caption="Seizure-duration histograms for RN103-22 and RN140-22 (dashed = mean, dotted = median)." %}
+
 > Data foundation for a proposed multimodal seizure-detection model. Note: the report's Fig 8 shows a mean-gap of 167.3 min for RN140-22 that disagrees with Table 5 (84.6 min); the table value is used here.

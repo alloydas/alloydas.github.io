@@ -58,6 +58,10 @@ Evidence-Based VQA — even the strongest VLMs trail far behind the human baseli
 }
 ```
 
+### Qualitative Comparison
+
+{% include figure.liquid loading="eager" path="assets/img/notesbank_results.jpg" class="img-fluid rounded z-depth-1" caption="Qualitative comparison of Vision-Language Models, OCR+LLMs, and human responses on a handwritten scientific note." %}
+
 ### Publication
 
 Pal, A., Biswas, S., Das, A. et al. _NoTeS-Bank: Benchmarking Neural Transcription and Search for Scientific Notes Understanding._ 2025. (arXiv:2504.09249)

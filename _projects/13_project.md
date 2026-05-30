@@ -43,4 +43,8 @@ chart:
 }
 ```
 
+### Tip-Distortion Demo
+
+{% include figure.liquid loading="eager" path="assets/img/afm_results.jpg" class="img-fluid rounded z-depth-1" caption="3D simulator: the true nanoparticle surface (teal) vs. the surface measured through a spherical tip (orange-red) — the tip-dilation artifact made visible." %}
+
 > Note: despite the working name ("AFM-AI"), this is a deterministic physics / morphology simulator — there is no learned or ML component.
