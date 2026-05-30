@@ -34,6 +34,23 @@ SELECTED_TITLES_KEYWORDS = [
 
 # Sources considered as preprint servers (lower priority)
 PREPRINT_SOURCES = {"arxiv", "ssrn", "biorxiv", "medrxiv", "researchsquare"}
+
+# Manual link overrides keyed by cite-key (last_name + year + first_title_word).
+# OpenAlex often lacks the arXiv id / open-access PDF, so supply them here.
+#   "arxiv": arXiv id  -> renders an "arXiv" button (links to arxiv.org/abs/<id>)
+#   "pdf":   filename in assets/pdf/  -> renders a "PDF" button (self-hosted)
+# These survive re-runs of this script; do NOT hand-edit papers.bib for links.
+MANUAL_LINKS = {
+    "liu2026lightingaware":       {"arxiv": "2605.20436"},
+    "pal2025notesbank":           {"arxiv": "2504.09249"},
+    "das2025faster":              {"arxiv": "2308.02905"},
+    "das2024fasttextspotter":     {"arxiv": "2408.14998"},
+    "das2024diving":              {"arxiv": "2310.00558"},
+    "das2024harnessing":          {"arxiv": "2310.00917"},
+    "mazumder2025docgraphformer": {"pdf": "doc2graphformer.pdf"},
+    "mazumder2025docgraphx":      {"pdf": "doc2graphx.pdf"},
+    "pal2025icdar":               {"pdf": "icdar2025_hnu_challenge.pdf"},
+}
 # ─────────────────────────────────────────────────────────────────────────────
 
 
@@ -223,6 +240,12 @@ def work_to_bibtex(work: dict, index: int) -> str:
     oa = work.get("best_oa_location") or {}
     pdf_url = oa.get("pdf_url", "") or ""
 
+    # Apply manual link overrides (arXiv id and/or self-hosted PDF filename).
+    override = MANUAL_LINKS.get(cite_key, {})
+    if override.get("arxiv"):
+        arxiv_id = override["arxiv"]
+    pdf_file = override.get("pdf", "")
+
     abstract = reconstruct_abstract(work.get("abstract_inverted_index"))
     abstract = clean_latex(abstract)
     selected = "true" if is_selected(title) else "false"
@@ -250,6 +273,7 @@ def work_to_bibtex(work: dict, index: int) -> str:
 
     if doi:      lines.append(f"  doi       = {{{doi}}},")
     if arxiv_id: lines.append(f"  arxiv     = {{{arxiv_id}}},")
+    if pdf_file: lines.append(f"  pdf       = {{{pdf_file}}},")
     if pdf_url:  lines.append(f"  html      = {{{pdf_url}}},")
     if abstract: lines.append(f"  abstract  = {{{abstract}}},")
 
