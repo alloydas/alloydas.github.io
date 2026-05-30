@@ -32,7 +32,6 @@ Previously, I was a Research Assistant at the [Computer Vision and Pattern Recog
 
 I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journal/371) journal.
 
-My scholarly record spans **24 works indexed on [ORCID](https://orcid.org/0000-0002-4502-4984)** (2022–2026) — including 11 conference papers and 6 journal articles — and is also catalogued on [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57560089800). My research has appeared at venues such as **WACV**, **ICRA**, **ICPR**, and **ICDAR**, and in journals including *Knowledge-Based Systems*, *Multimedia Tools and Applications*, and *Ecological Informatics*.
 
 ---
 
