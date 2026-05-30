@@ -66,3 +66,5 @@ FASTER cuts FID (perceptual distance, lower is better) to less than a third of t
 ### Publication
 
 Das, A. et al. _FASTER: A Font-Agnostic Scene Text Editing and Rendering Framework._ WACV 2025. (arXiv:2308.02905)
+
+Work done at [CVPRU, Indian Statistical Institute Kolkata](https://cvpru.isical.ac.in/).
