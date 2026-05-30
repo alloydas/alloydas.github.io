@@ -55,3 +55,5 @@ Per-model accuracy is reported in the journal article; the public benchmark is s
 ### Publication
 
 Das, A., Banerjee, P., Biswas, S. et al. _Tricho-Vision: The use of computer vision in trichotaxonomy for enhancing wildlife conservation of priority species._ Ecological Informatics, 2025.
+
+Work done at [Habitat Lens Private Limited](https://habitatlens.in/).

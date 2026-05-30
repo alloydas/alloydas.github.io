@@ -54,6 +54,16 @@ cv:
           - "EmbodiedMAE — multi-modal masked autoencoder for 3D Sorghum plant reconstruction from RGB, depth, and point cloud data"
           - "Lighting-aware instance segmentation — custom Lighting Convolutional Attention (LCA) module extending SAM"
 
+      - company: Habitat Lens Private Limited
+        position: Founder & CTO — Head of AI Solutions
+        location: Kolkata, India
+        url: https://habitatlens.in/
+        start_date: 2024
+        end_date: present
+        highlights:
+          - "AI-for-conservation venture applying computer vision to wildlife and biodiversity"
+          - "Tricho-Vision — computer-vision trichotaxonomy for species identification from mammalian hair (Ecological Informatics 2025)"
+
       - company: Computer Vision & Pattern Recognition Unit (CVPRU), ISI Kolkata
         position: Research Assistant
         location: Kolkata, India
