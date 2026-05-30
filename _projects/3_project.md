@@ -2,7 +2,7 @@
 layout: page
 title: FastTextSpotter
 description: High-Efficiency Transformer for Multilingual Scene Text Spotting
-img: assets/img/7.jpg
+img: assets/img/fasttextspotter.jpg
 importance: 3
 category: work
 ---
