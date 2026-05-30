@@ -59,3 +59,5 @@ Detection/recognition F-measures are reported in the journal article; the releas
 ### Publication
 
 Das, A., Shivakumara, P., Banerjee, A., Antonacopoulos, A., Pal, U. _Soft set-based MSER end-to-end system for occluded scene text detection, recognition and prediction._ Knowledge-Based Systems, 2024. ([code + OSTD](https://github.com/alloydas/Softset-MSER-Based-Occluded-Scene-Text-Spotting))
+
+Work done at [CVPRU, Indian Statistical Institute Kolkata](https://cvpru.isical.ac.in/).

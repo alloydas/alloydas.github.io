@@ -60,3 +60,5 @@ On the new Under-Water Text (UWT) benchmark, DA-TextSpotter more than doubles en
 ### Publication
 
 Das, A., Biswas, S., Pal, U., Lladós, J. _Diving into the Depths of Spotting Text in Multi-Domain Noisy Scenes._ ICRA 2024. (arXiv:2310.00558)
+
+Work done at [CVPRU, Indian Statistical Institute Kolkata](https://cvpru.isical.ac.in/).

@@ -57,3 +57,5 @@ Detection H-mean across standard benchmarks plus low-resource Vietnamese (VinTex
 ### Publication
 
 Das, A., Biswas, S., Banerjee, A., Lladós, J., Pal, U., Bhattacharya, S. _Harnessing the Power of Multi-Lingual Datasets for Pre-training: Towards Enhancing Text Spotting Performance._ WACV 2024. (arXiv:2310.00917)
+
+Work done at [CVPRU, Indian Statistical Institute Kolkata](https://cvpru.isical.ac.in/).
