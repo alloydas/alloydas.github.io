@@ -57,7 +57,7 @@ Multilingual SER F1 (fine-tune on 8 languages) — Doc2Graph-X matches or beats 
 
 ### Multilingual Results
 
-{% include figure.liquid loading="eager" path="assets/img/doc2graphx_results.jpg" class="img-fluid rounded z-depth-1" caption="Multilingual SER comparison (Input / Doc2Graph / Doc2Graph-X / Ground Truth) across Chinese, English, and French forms." %}
+{% include figure.liquid loading="eager" path="assets/img/doc2graphx_multilingual.jpg" class="img-fluid rounded z-depth-1" caption="Multilingual SER comparison (Input / Doc2Graph / Doc2Graph-X / Ground Truth) across Chinese, English, and French forms." %}
 
 ### Publication
 
