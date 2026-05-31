@@ -52,7 +52,7 @@ Detection H-mean across standard benchmarks plus low-resource Vietnamese (VinTex
 
 ### Qualitative Results
 
-{% include figure.liquid loading="eager" path="assets/img/wacv_results.jpg" class="img-fluid rounded z-depth-1" caption="Qualitative spotting results with feature maps across Total-Text, CTW1500, ICDAR, VinText, MLT, and ReCTS." %}
+{% include figure.liquid loading="eager" path="assets/img/wacv_featuremaps.jpg" class="img-fluid rounded z-depth-1" caption="Qualitative spotting results with feature maps across Total-Text, CTW1500, ICDAR, VinText, MLT, and ReCTS." %}
 
 ### Publication
 
