@@ -43,7 +43,7 @@ contact_note: >
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
-google_analytics:  # your google analytics id
+google_analytics: G-103Y45VL2F # your google analytics id
 bing_verification: # bing verification token
 
 # -----------------------------------------------------------------------------
@@ -187,7 +187,7 @@ enable_darkmode: true
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: false
+enable_google_analytics: true
 enable_cronitor_analytics: false
 enable_pirsch_analytics: false
 enable_openpanel_analytics: false
