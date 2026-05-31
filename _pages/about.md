@@ -30,7 +30,7 @@ My research lies at the intersection of **computer vision**, **multi-modal repre
 
 Previously, I was a Research Assistant at the [Computer Vision and Pattern Recognition Unit (CVPRU)](https://cvpru.isical.ac.in/), [Indian Statistical Institute, Kolkata](https://www.isical.ac.in/), supervised by [Prof. Umapada Pal](https://www.isical.ac.in/~umapada/). My work there focused on **scene text spotting**, **recognition**, and **editing** — resulting in publications at WACV 2024, WACV 2025, ICRA 2024, and ICPR 2024.
 
-I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journal/371) journal.
+I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journal/371) and [*Scientific Reports*](https://www.nature.com/srep/) journals.
 
 
 ---
