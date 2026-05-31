@@ -36,6 +36,9 @@ Previously, I was a Research Assistant at the [Computer Vision and Pattern Recog
 
 I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journal/371) and [*Scientific Reports*](https://www.nature.com/srep/) journals.
 
+<h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a></h2>
+
+{% include news.liquid limit=true %}
 
 ---
 
