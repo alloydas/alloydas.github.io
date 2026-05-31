@@ -161,7 +161,7 @@ scholar:
 # Display the year only if it is not the current year
 display_years:
   start: 2016
-  end: 2025
+  end: 2026
 
 # Badges (shown on publication cards)
 enable_publication_badges:
