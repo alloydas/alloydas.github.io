@@ -3,7 +3,7 @@ layout: page
 title: Swin-TESTR
 description: Multi-lingual pre-training for domain-adaptive text spotting
 img: assets/img/swin_testr.jpg
-importance: 12
+importance: 13
 category: work
 chart:
   echarts: true

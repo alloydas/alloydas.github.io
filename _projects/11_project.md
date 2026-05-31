@@ -3,7 +3,7 @@ layout: page
 title: DA-TextSpotter
 description: Domain-agnostic scene text spotting in multi-domain noisy scenes
 img: assets/img/da_textspotter.jpg
-importance: 11
+importance: 12
 category: work
 chart:
   echarts: true

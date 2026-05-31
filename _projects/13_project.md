@@ -3,7 +3,7 @@ layout: page
 title: AFM Contact Mode Simulator
 description: Browser-based simulator of AFM tip-geometry artifacts via Minkowski-sum morphology
 img: assets/img/afm_simulator.jpg
-importance: 13
+importance: 4
 category: work
 chart:
   echarts: true

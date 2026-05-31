@@ -3,7 +3,7 @@ layout: page
 title: Seizure Video–EEG Synchronisation
 description: Multimodal EEG + video pipeline for seizure data-distribution analysis
 img: assets/img/eeg_pipeline.jpg
-importance: 14
+importance: 3
 category: work
 chart:
   echarts: true

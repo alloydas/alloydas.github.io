@@ -3,7 +3,7 @@ layout: page
 title: Doc2GraphFormer
 description: Bridging graph learning with transformer attention for document understanding
 img: assets/img/doc2graphformer.jpg
-importance: 8
+importance: 6
 category: work
 chart:
   echarts: true

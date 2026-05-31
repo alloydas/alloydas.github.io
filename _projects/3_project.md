@@ -3,7 +3,7 @@ layout: page
 title: FastTextSpotter
 description: High-Efficiency Transformer for Multilingual Scene Text Spotting
 img: assets/img/fasttextspotter.jpg
-importance: 3
+importance: 11
 category: work
 chart:
   echarts: true

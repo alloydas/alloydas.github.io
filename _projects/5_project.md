@@ -3,7 +3,7 @@ layout: page
 title: Tricho-Vision
 description: Computer vision for trichotaxonomy and wildlife conservation
 img: assets/img/tricho.jpg
-importance: 5
+importance: 7
 category: work
 chart:
   echarts: true

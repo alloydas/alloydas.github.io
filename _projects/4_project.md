@@ -3,7 +3,7 @@ layout: page
 title: FASTER
 description: Font-Agnostic Scene Text Editing and Rendering Framework
 img: assets/img/faster.jpg
-importance: 4
+importance: 10
 category: work
 chart:
   echarts: true

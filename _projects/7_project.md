@@ -3,7 +3,7 @@ layout: page
 title: NoTeS-Bank
 description: Benchmarking Neural Transcription and Search for scientific notes
 img: assets/img/notesbank.jpg
-importance: 7
+importance: 8
 category: work
 chart:
   echarts: true

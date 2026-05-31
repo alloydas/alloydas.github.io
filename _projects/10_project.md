@@ -3,7 +3,7 @@ layout: page
 title: ICDAR 2025 HNU Challenge
 description: Handwritten Notes Understanding competition benchmark
 img: assets/img/hnu_challenge.jpg
-importance: 10
+importance: 5
 category: work
 chart:
   echarts: true
