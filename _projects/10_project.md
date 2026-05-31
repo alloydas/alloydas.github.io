@@ -54,7 +54,7 @@ Final leaderboard (Evidence-Based VQA) — even the best systems score low ANLS\
 
 ### Dataset Samples
 
-{% include figure.liquid loading="eager" path="assets/img/hnu_samples.jpg" class="img-fluid rounded z-depth-1" caption="Sample handwritten STEM notes with example questions and answer-type labels from the HNU dataset." %}
+{% include figure.liquid loading="eager" path="assets/img/hnu_grid.jpg" class="img-fluid rounded z-depth-1" caption="Sample handwritten STEM notes with example questions and answer-type labels from the HNU dataset." %}
 
 ### Publication
 

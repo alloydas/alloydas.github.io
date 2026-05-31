@@ -55,7 +55,7 @@ On the new Under-Water Text (UWT) benchmark, DA-TextSpotter more than doubles en
 
 ### Qualitative Results
 
-{% include figure.liquid loading="eager" path="assets/img/icra_qualitative.jpg" class="img-fluid rounded z-depth-1" caption="Qualitative text spotting across natural-scene and noisy underwater (UWT) images." %}
+{% include figure.liquid loading="eager" path="assets/img/icra_montage.jpg" class="img-fluid rounded z-depth-1" caption="Qualitative text spotting across natural-scene and noisy underwater (UWT) images." %}
 
 ### Publication
 
