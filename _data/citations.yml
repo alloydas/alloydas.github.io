@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-13'
+  last_updated: '2026-08-17'
 papers:
   JnO0s1AAAAAJ:9yKSN-GCB0IC:
     citations: 1
@@ -10,7 +10,7 @@ papers:
     title: ICDAR 2025 Handwritten Notes Understanding Challenge
     year: '2025'
   JnO0s1AAAAAJ:Tyk-4Ss8FVUC:
-    citations: 17
+    citations: 18
     title: 'Fasttextspotter: A high-efficiency transformer for multilingual scene text spotting'
     year: '2024'
   JnO0s1AAAAAJ:UeHWp8X0CEIC:
@@ -38,23 +38,27 @@ papers:
     title: 'Doc2GraphFormer: Bridging Structured Graph Learning with Transformer Attention for Efficient Document Understanding'
     year: '2025'
   JnO0s1AAAAAJ:eQOLeE2rZwMC:
-    citations: 12
+    citations: 13
     title: 'FASTER: A Font-Agnostic Scene Text Editing and Rendering Framework'
     year: '2025'
+  JnO0s1AAAAAJ:hqOjcs7Dif8C:
+    citations: 0
+    title: Deep Entropy-Sampled O-Net for Joint Retinal Cup-Disc Segmentation in Glaucoma Detection
+    year: '2024'
   JnO0s1AAAAAJ:qjMakFHDy7sC:
     citations: 16
     title: 'Harnessing the power of multi-lingual datasets for pre-training: Towards enhancing text spotting performance'
     year: '2024'
   JnO0s1AAAAAJ:roLk4NBRz8UC:
-    citations: 16
+    citations: 17
     title: "Overview of the hasoc track at fire 2025: Abusive meme identification\u2014shadows behind the laughter"
     year: '2025'
   JnO0s1AAAAAJ:u-x6o8ySG0sC:
-    citations: 1
+    citations: 2
     title: Automatic detection of COVID-19 from chest x-ray images using deep learning model
     year: '2022'
   JnO0s1AAAAAJ:u5HHmVD_uO8C:
-    citations: 4
+    citations: 5
     title: U-Net based optic cup and disk segmentation from retinal fundus images via entropy sampling
     year: '2021'
   JnO0s1AAAAAJ:ufrVoPGSRksC:
