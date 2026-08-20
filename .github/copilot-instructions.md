@@ -123,13 +123,11 @@ When making changes:
 
 ### GitHub Workflows (in `.github/workflows/`)
 
-- **deploy.yml** – Main deployment workflow (runs on push/PR to main/master)
-  - Sets up Ruby 3.3.5, Python 3.13
-  - Installs imagemagick, nbconvert
-  - Runs `bundle exec jekyll build` with JEKYLL_ENV=production
-  - Runs purgecss for CSS optimization
-  - Commits built site to gh-pages branch
-  - **Triggers on:** Changes to site files, assets, config (NOT documentation files alone)
+- **jekyll.yml** – Main deployment workflow (runs on push to main)
+  - Sets up Ruby 3.1
+  - Runs `bundle exec jekyll build`
+  - Uploads the built site as a GitHub Pages artifact and deploys it
+  - **Triggers on:** Any push to `main`. Note that pushes made by a workflow using the default `GITHUB_TOKEN` do not trigger it
 - **prettier.yml** – Code formatting validation (mandatory)
   - Runs prettier on all files
   - **Fails PRs if code is not properly formatted**
@@ -181,7 +179,7 @@ bundle exec jekyll build
 
 - **Problem:** Deploy succeeds locally but fails on GitHub Actions
 - **Cause:** Jekyll plugins don't load properly
-- **Solution:** Verify gh-pages branch is set as deployment source in Settings → Pages
+- **Solution:** Verify **Source** is set to **GitHub Actions** in Settings → Pages
 
 ### CSS/JS Not Loading After Deploy
 

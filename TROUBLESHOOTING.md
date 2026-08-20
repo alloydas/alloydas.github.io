@@ -46,7 +46,7 @@ This guide covers common issues and their solutions. For more information, see [
 3. Verify your `_config.yml` has correct `url` and `baseurl`:
    - Personal site: `url: https://username.github.io` and `baseurl:` (empty)
    - Project site: `url: https://username.github.io` and `baseurl: /repo-name/`
-4. Check that you're pushing to the `main` (or `master`) branch, NOT `gh-pages`
+4. Check that you're pushing to the `main` (or `master`) branch
 5. Commit and push a small change to trigger redeployment
 
 **For YAML syntax errors:**
@@ -77,10 +77,10 @@ This guide covers common issues and their solutions. For more information, see [
 
 **Solution:**
 
-1. Check your **Settings** → **Pages** → **Source** is set to `Deploy from a branch`
-2. Ensure the branch is set to `gh-pages` (NOT `main`)
+1. Check your **Settings** → **Pages** → **Source** is set to `GitHub Actions`
+2. Confirm the **Deploy Jekyll site to Pages** workflow ran and succeeded in the **Actions** tab
 3. Wait 5 minutes and check Actions again
-4. The issue usually resolves after you verify the gh-pages branch is set
+4. Note that a commit pushed by a workflow using the default `GITHUB_TOKEN` does **not** trigger other workflows, so an automated commit will not redeploy the site on its own. Push with a personal access token if you need automated commits to publish.
 
 ---
 

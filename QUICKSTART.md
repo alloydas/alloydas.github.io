@@ -53,13 +53,11 @@
 
 ## Step 4: View Your Site (1 min)
 
-1. Go to your repository → **Actions** tab
-2. Wait for the "Deploy site" workflow to complete (look for a green checkmark, ~4 minutes)
-3. Go to **Settings** → **Pages** → **Build and deployment**
-4. Make sure **Source** is set to **Deploy from a branch**
-5. Set the branch to **gh-pages** (NOT main)
-6. Wait for the "pages-build-deployment" workflow to complete (~45 seconds)
-7. Visit `https://your-username.github.io` in your browser
+1. Go to **Settings** → **Pages** → **Build and deployment**
+2. Set **Source** to **GitHub Actions**
+3. Go to your repository → **Actions** tab
+4. Wait for the "Deploy Jekyll site to Pages" workflow to complete (look for a green checkmark, ~2 minutes)
+5. Visit `https://your-username.github.io` in your browser
 
 **That's it!** Your site is live. You now have a working al-folio website.
 

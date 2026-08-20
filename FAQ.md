@@ -38,7 +38,7 @@ You need to add `CNAME` file to the `main` or `source` branch of your repository
 
 ## My webpage works locally. But after deploying, it fails to build and throws `Unknown tag 'toc'`. How do I fix that?
 
-Make sure you followed through the [deployment instructions](#deployment) in the previous section. You should have set the deployment branch to `gh-pages`. (Related issue: [1438](https://github.com/alshedivat/al-folio/issues/1438).)
+Make sure you followed through the [deployment instructions](#deployment) in the previous section. You should have set the Pages **Source** to **GitHub Actions**. (Related issue: [1438](https://github.com/alshedivat/al-folio/issues/1438).)
 
 ## My webpage works locally. But after deploying, it is not displayed correctly (CSS and JS are not loaded properly). How do I fix that?
 
@@ -122,7 +122,7 @@ Currently we have the following workflows:
 - `broken-links.yml`: checks for broken links in your repository with the [lychee-action](https://github.com/lycheeverse/lychee-action)
 - `deploy-docker-tag.yml`: adds some metadata to the docker image and pushes it to Docker Hub
 - `deploy-image.yml`: deploys a new docker image with the latest changes to Docker Hub
-- `deploy.yml`: deploys the website to GitHub Pages
+- `jekyll.yml`: builds the website and deploys it to GitHub Pages as a Pages artifact
 - `docker-slim.yml`: deploys a smaller version of the docker image to Docker Hub with the [docker-slim-action](https://github.com/kitabisa/docker-slim-action)
 - `lighthouse-badger.yml`: runs a [lighthouse](https://github.com/GoogleChrome/lighthouse) test for your site with the [lighthouse-badger-action](https://github.com/MyActionWay/lighthouse-badger-action), saving the results in the repository for easy inspecting, as can be seen [here](https://github.com/alshedivat/al-folio?tab=readme-ov-file#lighthouse-pagespeed-insights). For more information on how to enable this workflow, check our [FAQ question about it](https://github.com/alshedivat/al-folio/blob/main/FAQ.md#when-i-manually-run-the-lighthouse-badger-workflow-it-fails-with-error-input-required-and-not-supplied-token-how-do-i-fix-that)
 - `prettier-comment-on-pr.yml`: not working. For now, this action is disabled. It was supposed to run prettier on the PRs and comment on them with the changes needed. For more information, check [issue 2115](https://github.com/alshedivat/al-folio/issues/2115)
