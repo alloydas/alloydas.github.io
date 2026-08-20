@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests pyyaml
       - name: Fetch publications from OpenAlex
         run: python scripts/fetch_publications.py
       - name: Commit and push updated papers.bib

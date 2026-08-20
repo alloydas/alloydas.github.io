@@ -8,7 +8,7 @@ and writes a BibTeX file to _bibliography/papers.bib.
 Usage:
     python scripts/fetch_publications.py
 
-Requires: requests  (pip install requests)
+Requires: requests, pyyaml  (pip install requests pyyaml)
 """
 
 import re
@@ -19,6 +19,7 @@ from pathlib import Path
 # ── Config ────────────────────────────────────────────────────────────────────
 OPENALEX_AUTHOR_ID = "A5007169005"
 OUTPUT_PATH        = Path("_bibliography/papers.bib")
+CITATIONS_PATH     = Path("_data/citations.yml")
 EMAIL              = "alloyuit@gmail.com"
 BASE_URL           = "https://api.openalex.org"
 HEADERS            = {"User-Agent": f"al-folio-fetcher/1.0 (mailto:{EMAIL})"}
@@ -52,6 +53,44 @@ MANUAL_LINKS = {
     "pal2025icdar":               {"pdf": "icdar2025_hnu_challenge.pdf"},
 }
 # ─────────────────────────────────────────────────────────────────────────────
+
+
+def load_scholar_ids() -> dict:
+    """
+    Map normalized title -> Google Scholar publication id, read from
+    _data/citations.yml (maintained by update-citations.yml).
+
+    Keys in that file look like "<scholar_userid>:<publication_id>"; bib.liquid
+    wants only the part after the colon, as `google_scholar_id`. Without that
+    field the Google Scholar citation badge never renders.
+
+    Missing file or missing PyYAML is not fatal — we just emit no ids.
+    """
+    if not CITATIONS_PATH.exists():
+        print(f"  [scholar] {CITATIONS_PATH} not found — no citation badges")
+        return {}
+    try:
+        import yaml
+    except ImportError:
+        print("  [scholar] PyYAML not installed — no citation badges")
+        return {}
+
+    try:
+        data = yaml.safe_load(CITATIONS_PATH.read_text(encoding="utf-8")) or {}
+    except Exception as exc:
+        print(f"  [scholar] could not parse {CITATIONS_PATH}: {exc}")
+        return {}
+
+    mapping = {}
+    for key, meta in (data.get("papers") or {}).items():
+        if ":" not in key or not isinstance(meta, dict):
+            continue
+        title = meta.get("title") or ""
+        norm = normalize_title(title)
+        if norm:
+            mapping[norm] = key.split(":", 1)[1]
+    print(f"  [scholar] loaded {len(mapping)} Scholar ids from {CITATIONS_PATH}")
+    return mapping
 
 
 def fetch_all_works(author_id: str) -> list:
@@ -88,7 +127,10 @@ def normalize_title(title: str) -> str:
     if not title:
         return ""
     t = title.lower()
-    t = re.sub(r"[^a-z0-9\s]", "", t)
+    # Replace punctuation with a space rather than deleting it: Scholar and
+    # OpenAlex disagree about spacing around dashes ("x—y" vs "x — y"), and
+    # deleting the dash would fuse the words on one side only.
+    t = re.sub(r"[^a-z0-9\s]", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
     return t
 
@@ -223,7 +265,7 @@ def is_selected(title: str) -> bool:
     return any(kw.lower() in title.lower() for kw in SELECTED_TITLES_KEYWORDS)
 
 
-def work_to_bibtex(work: dict, index: int) -> str:
+def work_to_bibtex(work: dict, index: int, scholar_ids: dict = None) -> str:
     cite_key  = make_cite_key(work, index)
     title     = work.get("title", "Untitled")
     year      = work.get("publication_year", "")
@@ -245,6 +287,8 @@ def work_to_bibtex(work: dict, index: int) -> str:
     if override.get("arxiv"):
         arxiv_id = override["arxiv"]
     pdf_file = override.get("pdf", "")
+
+    scholar_id = (scholar_ids or {}).get(normalize_title(title), "")
 
     abstract = reconstruct_abstract(work.get("abstract_inverted_index"))
     abstract = clean_latex(abstract)
@@ -274,6 +318,8 @@ def work_to_bibtex(work: dict, index: int) -> str:
     if doi:      lines.append(f"  doi       = {{{doi}}},")
     if arxiv_id: lines.append(f"  arxiv     = {{{arxiv_id}}},")
     if pdf_file: lines.append(f"  pdf       = {{{pdf_file}}},")
+    if scholar_id:
+        lines.append(f"  google_scholar_id = {{{scholar_id}}},")
     if pdf_url:  lines.append(f"  html      = {{{pdf_url}}},")
     if abstract: lines.append(f"  abstract  = {{{abstract}}},")
 
@@ -300,7 +346,12 @@ def main():
         print("⚠️  No works found.")
         return
 
-    bib_entries = [work_to_bibtex(w, i) for i, w in enumerate(works)]
+    print("\n\U0001F393 Loading Google Scholar ids...")
+    scholar_ids = load_scholar_ids()
+
+    bib_entries = [work_to_bibtex(w, i, scholar_ids) for i, w in enumerate(works)]
+    matched = sum(1 for e in bib_entries if "google_scholar_id" in e)
+    print(f"   Scholar ids attached to {matched}/{len(bib_entries)} entries")
 
     header = (
         "% ─────────────────────────────────────────────────────────────────\n"

@@ -167,11 +167,12 @@ display_years:
 enable_publication_badges:
   altmetric: true
   dimensions: true
+  google_scholar: true
   inspirehep: false
 
 # Filter out certain bibtex entry types from the Bibliography / Citations page
 filtered_bibtex_keywords:
-  [abbr, abstract, award, award_name, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
+  [abbr, abstract, award, award_name, bibtex_show, blog, code, google_scholar_id, html, pdf, poster, preview, selected, slides, supp, video, website]
 
 # Maximum number of authors to show before "et al."
 max_author_limit: 10
