@@ -16,7 +16,7 @@ jobs:
         with:
           # Use a PAT so the auto-commit below counts as repository activity
           # (keeps GitHub from disabling this cron after 60 days) and so the
-          # push triggers deploy.yml. Falls back to GITHUB_TOKEN if unset.
+          # push triggers jekyll.yml. Falls back to GITHUB_TOKEN if unset.
           token: ${{ secrets.PAT || github.token }}
       - name: Set up Python
         uses: actions/setup-python@v5

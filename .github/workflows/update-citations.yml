@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           # Pushes made with the default GITHUB_TOKEN do not trigger other
-          # workflows, so deploy.yml never rebuilt the site after a citation
+          # workflows, so jekyll.yml never rebuilt the site after a citation
           # refresh. Falls back to GITHUB_TOKEN if the PAT secret is unset.
           token: ${{ secrets.PAT || github.token }}
 
