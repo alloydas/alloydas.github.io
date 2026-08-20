@@ -20,7 +20,11 @@ jobs:
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
       - name: Install Prettier 💾
-        run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+        # npm ci installs exactly what package-lock.json pins. The previous
+        # `npm install prettier@latest` ignored the lockfile, so CI silently
+        # drifted ahead of local (3.9.6 vs the pinned 3.8.0) and failed on
+        # files nobody had touched.
+        run: npm ci
       - name: Prettier Check 🔎
         id: prettier
         run: npx prettier . --check
