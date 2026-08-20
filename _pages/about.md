@@ -55,7 +55,7 @@ I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journa
   "grid": { "left": "5%", "right": "5%", "bottom": "10%", "containLabel": true },
   "xAxis": {
     "type": "category",
-    "data": ["2021", "2022", "2024", "2025", "2026"],
+    "data": [{% for y in site.data.pub_stats.years %}"{{ y.year }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
     "axisLabel": { "color": "#666" }
   },
   "yAxis": {
@@ -69,7 +69,7 @@ I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journa
       "name": "Publications",
       "type": "bar",
       "barMaxWidth": 40,
-      "data": [1, 2, 5, 7, 1],
+      "data": [{% for y in site.data.pub_stats.years %}{{ y.count }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
       "itemStyle": {
         "color": {
           "type": "linear",
@@ -153,7 +153,7 @@ I am a peer reviewer for [*The Visual Computer*](https://www.springer.com/journa
       "data": [
         { "value": 4, "name": "WACV / ICRA / ICPR", "itemStyle": { "color": "#4f8ef7" } },
         { "value": 3, "name": "Journals (KBS / MTA / Eco. Inf.)", "itemStyle": { "color": "#7fcfe8" } },
-        { "value": 4, "name": "ICDAR / LNCS", "itemStyle": { "color": "#5cc88a" } },
+        { "value": 5, "name": "ICDAR / LNCS", "itemStyle": { "color": "#5cc88a" } },
         { "value": 3, "name": "Preprints / Workshops", "itemStyle": { "color": "#f7a64f" } },
         { "value": 2, "name": "AIP / IJPRAI", "itemStyle": { "color": "#e87c7c" } }
       ]
