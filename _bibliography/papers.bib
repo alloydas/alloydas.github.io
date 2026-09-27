@@ -16,6 +16,16 @@
   bibtex_show = {true},
 }
 
+@misc{bhattacharjee2026towards,
+  title     = {{Towards Trustworthy Biological Alignment in TabPFN-Probed Pathology Foundation Models}},
+  author    = {Bhattacharjee, Ushashi and Das, Alloy and Hannan, Saria and Roy, Tirtho and Howlader, Koushik and Sarkar, Soumik},
+  year      = {2026},
+  doi       = {10.48550/arxiv.2609.29523},
+  abstract  = {Histology and transcriptomics provide complementary views of tissue biology, capturing spatial morphology and molecular activity, respectively. Pathology foundation models (PFMs) learn rich morphological representations from H\&E images, yet strong downstream performance alone does not establish whether these representations encode biologically meaningful and robust molecular information. We present a **training-free framework for auditing biological alignment in frozen PFMs** using spatially paired histology and transcriptomics from HEST-1k, evaluated on **240 samples spanning three organs**. Multiple frozen PFMs are used to extract H\&E representations, while gene expression is aggregated into biologically interpretable pathway-level programs. We use TabPFN as a pretrained probe to quantify the extent to which these molecular programs can be decoded from frozen image representations without task-specific gradient updates. Beyond predictive performance, our audit examines whether pathway decodability generalizes across tissue sections, patient groups, and tissue types; whether representations exhibit section-level or other shortcut dependencies; and whether predictions remain stable under small image perturbations and context resampling. This multi-tissue evaluation distinguishes molecular programs that are consistently encoded from those that are tissue-specific, unstable, or shortcut-sensitive. Our framework therefore provides a systematic approach for assessing not only **what biological information pathology foundation models encode, but also how reliably that information persists under clinically relevant sources of variation**.},
+  selected  = {false},
+  bibtex_show = {true},
+}
+
 @article{chowdhury2026deep,
   title     = {{Deep Entropy-Sampled O-Net for Joint Retinal Cup-Disc Segmentation in Glaucoma Detection}},
   author    = {Chowdhury, Arindam and Agarwal, Rohit and Das, Alloy and Jalan, Ayush and Biswas, Sanket and Nandi, Debashis},
@@ -35,6 +45,7 @@
   doi       = {10.48550/arxiv.2605.20436},
   arxiv     = {2605.20436},
   google_scholar_id = {UebtZRa9Y70C},
+  html      = {https://arxiv.org/pdf/2605.20436},
   abstract  = {Foundation models like the Segment Anything Model (SAM) demonstrate impressive zero-shot generalization but frequently degrade under diverse real-world illumination, particularly for instance segmentation. In this work, we address this limitation by developing \textit\{Lighting Convolutional-Attention (\lca\{\})\}, an adapter module that enhances segmentation robustness without fine-tuning the heavy backbone. \lca\{\} employs a dual-branch architecture to process RGB features alongside contrast maps, enabling physically motivated sensitivity to structural changes rather than illumination artifacts. We optimize \lca\{\} through a pairwise training strategy, introducing a targeted loss term that explicitly penalizes discrepancies between clean images and their corresponding illumination variants. To evaluate and support this architecture, we conduct a comprehensive empirical study across multiple existing benchmarks and present a novel Unity-based synthetic dataset specifically designed to accurately replicate complex real-world lighting conditions. Extensive experimental results demonstrate that our approach successfully bridges the domain gap, delivering superior lighting-robust segmentation.},
   selected  = {false},
   bibtex_show = {true},
@@ -204,7 +215,7 @@
 
 @article{das2022automatic,
   title     = {{Automatic detection of COVID-19 from chest x-ray images using deep learning model}},
-  author    = {Das, Alloy and Agarwal, Rohit and Singh, Rituparna and Chowdhury, Arindam and Nandi, Debashis},
+  author    = {Das, Alloy and Agarwal, Rohit and Singh, Rituparna and Chowdhury, Arindam Gan and Nandi, Debashis},
   year      = {2022},
   journal   = {{AIP conference proceedings}},
   volume    = {2424},
@@ -218,7 +229,7 @@
 
 @article{shivakumara2022new,
   title     = {{New Deep Spatio-Structural Features of Handwritten Text Lines for Document Age Classification}},
-  author    = {Shivakumara, Palaiahnakote and Das, Alloy and Raghunandan, K. S. and Pal, Umapada and Blumenstein, Michael},
+  author    = {Shivakumara, Palaiahnakote and Das, Alloy and Raghunandan, Karpuravalli Srinivas and Pal, Umapada and Blumenstein, Michael},
   year      = {2022},
   journal   = {{International Journal of Pattern Recognition and Artificial Intelligence}},
   volume    = {36},
@@ -232,7 +243,7 @@
 
 @article{chowdhury2021unet,
   title     = {{U-Net Based Optic Cup and Disk Segmentation from Retinal Fundus Images via Entropy Sampling}},
-  author    = {Chowdhury, Arindam and Agarwal, Rohit and Das, Alloy and Nandi, Debashis},
+  author    = {Chowdhury, Arindam Bhanja and Agarwal, Rohit and Das, Alloy and Nandi, Debashis},
   year      = {2021},
   journal   = {{Advances in intelligent systems and computing}},
   pages     = {479--489},
