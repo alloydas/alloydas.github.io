@@ -7,7 +7,7 @@ cv:
   summary: >
     PhD student at Iowa State University researching computer vision, multi-modal representation
     learning, and agricultural AI. Previously a Research Assistant at Indian Statistical Institute,
-    Kolkata. Author of 16+ peer-reviewed papers at venues including WACV, ICRA, ICPR, and ICDAR.
+    Kolkata. Author of 14 peer-reviewed papers at venues including WACV, ICRA, ICPR, and ICDAR.
 
   social_networks:
     - network: GitHub
@@ -33,14 +33,15 @@ cv:
           - "Advisor: Prof. Soumik Sarkar (SCSLab)"
           - "Research focus: Multi-modal plant phenotyping, lighting-robust instance segmentation"
 
-      - institution: University of Engineering & Management, Kolkata
-        location: Kolkata, India
-        area: Electronics & Communication Engineering
-        studyType: B.Tech
-        start_date: 2017
-        end_date: 2021
+      - institution: University Institute of Technology, Burdwan University
+        location: Burdwan, West Bengal, India
+        area: Information Technology
+        studyType: B.E.
+        start_date: 2018
+        end_date: 2022
         highlights:
-          - "Graduated with distinction"
+          - "CGPA: 8.79/10"
+          - "Final year project: Retinal disease (glaucoma) segmentation and detection using machine learning"
 
     Experience:
       - company: SCSLab, Iowa State University
@@ -53,23 +54,38 @@ cv:
           - "Advisor: Prof. Soumik Sarkar"
           - "EmbodiedMAE — multi-modal masked autoencoder for 3D Sorghum plant reconstruction from RGB, depth, and point cloud data"
           - "Lighting-aware instance segmentation — custom Lighting Convolutional Attention (LCA) module extending SAM"
+          - "Seeing Seizures — large-scale benchmark of 10 video and 7 EEG models for rodent seizure detection and Racine severity grading (under review)"
 
       - company: Computer Vision & Pattern Recognition Unit (CVPRU), ISI Kolkata
         position: Research Assistant
         location: Kolkata, India
         url: https://cvpru.isical.ac.in/
-        start_date: 2021
-        end_date: 2024
+        start_date: 2022-10
+        end_date: 2024-11
         highlights:
           - "Advisor: Prof. Umapada Pal"
           - "Published at WACV 2024, WACV 2025, ICRA 2024, ICPR 2024 on scene text spotting, recognition, and editing"
           - "Developed FastTextSpotter, FASTER (font-agnostic text editing), and multilingual text spotting systems"
+
+      - company: Department of Computer Science & Engineering, NIT Durgapur
+        position: Research Intern
+        location: Durgapur, India
+        start_date: 2021-09
+        end_date: 2022-03
+        highlights:
+          - "Advisor: Prof. Debashis Nandi"
+          - "Medical image segmentation, glaucoma detection, and COVID-19 detection"
 
     Awards:
       - title: Peer Reviewer
         date: 2026
         awarder: The Visual Computer (Springer)
         summary: Invited reviewer for Springer's journal on computer graphics and vision.
+
+      - title: Peer Reviewer
+        date: 2026
+        awarder: Scientific Reports (Nature Portfolio)
+        summary: Reviewer for Nature Portfolio's multidisciplinary open-access journal.
 
     Skills:
       - name: Computer Vision
@@ -80,7 +96,22 @@ cv:
       - name: Deep Learning
         level: Expert
         icon: fa-solid fa-brain
-        keywords: "PyTorch, Transformers, Masked Autoencoders, SAM, CLIP"
+        keywords: "PyTorch, Transformers, Masked Autoencoders (MAE), Segment Anything (SAM), CLIP"
+
+      - name: Training & MLOps
+        level: Advanced
+        icon: fa-solid fa-gears
+        keywords: "PyTorch DDP (multi-GPU distributed training), Weights & Biases (W&B)"
+
+      - name: High-Performance Computing
+        level: Advanced
+        icon: fa-solid fa-server
+        keywords: "Nova (Iowa State), TACC Vista, NCSA Delta"
+
+      - name: Synthetic Data
+        level: Intermediate
+        icon: fa-solid fa-cube
+        keywords: "Unity (synthetic data generation)"
 
       - name: Multi-modal Learning
         level: Advanced
