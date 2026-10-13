@@ -31,6 +31,7 @@ My research lies at the intersection of **computer vision**, **multi-modal repre
 
 - **EmbodiedMAE** — a multi-modal masked autoencoder for 3D plant reconstruction from RGB images, depth maps, and point clouds, targeting Sorghum phenotyping.
 - **Lighting-robust instance segmentation** — extending SAM with a custom Lighting Convolutional Attention (LCA) module for robust segmentation under challenging illumination conditions.
+- **[Seeing Seizures]({{ '/projects/15_project/' | relative_url }})** — a large-scale video vs. EEG deep-learning benchmark for automated rodent seizure detection and severity grading, built on 525 hours of synchronized recordings.
 
 Previously, I was a Research Assistant at the [Computer Vision and Pattern Recognition Unit (CVPRU)](https://cvpru.isical.ac.in/), [Indian Statistical Institute, Kolkata](https://www.isical.ac.in/), supervised by [Prof. Umapada Pal](https://www.isical.ac.in/~umapada/). My work there focused on **scene text spotting**, **recognition**, and **editing** — resulting in publications at WACV 2024, WACV 2025, ICRA 2024, and ICPR 2024.
 
