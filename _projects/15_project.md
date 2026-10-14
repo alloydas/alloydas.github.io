@@ -11,6 +11,9 @@ chart:
 
 **Seeing Seizures** is a large-scale empirical study of video and EEG deep learning for automated rodent seizure detection and Racine-scale severity grading. Ten video backbones and seven EEG models are trained under one matched protocol on a synchronized video–EEG cohort, so the two modalities can be compared head to head.
 
+**Authors:** **Alloy Das**\*, Shreyan Ganguly, Nyzil Massey, Hung Phi Doan, Zhanhong Jiang, Thimmasettappa Thippeswamy, Soumik Sarkar
+<br><small>Iowa State University · Arkansas State University (N. Massey) · \*Corresponding author</small>
+
 **Status:** under review (WACV 2027, Applications track) · [Project page](https://alloydas.github.io/EEG-seizure-classification/) · [Code](https://github.com/alloydas/EEG-seizure-classification)
 
 {% include figure.liquid loading="eager" path="assets/img/seeing_seizures.jpg" class="img-fluid rounded z-depth-1" caption="Overview: synchronized video–EEG cohort (left) and the benchmark: clip extraction, video-only and EEG-only model families, and held-out-animal generalization (right)." %}
