@@ -44,7 +44,7 @@ PREPRINT_SOURCES = {"arxiv", "ssrn", "biorxiv", "medrxiv", "researchsquare"}
 # These survive re-runs of this script; do NOT hand-edit papers.bib for links.
 MANUAL_LINKS = {
     "liu2026lightingaware":       {"arxiv": "2605.20436"},
-    "pal2025notesbank":           {"arxiv": "2504.09249"},
+    "das2026notesbank":           {"arxiv": "2504.09249"},
     "das2025faster":              {"arxiv": "2308.02905"},
     "das2024fasttextspotter":     {"arxiv": "2408.14998"},
     "das2024diving":              {"arxiv": "2310.00558"},
@@ -53,7 +53,40 @@ MANUAL_LINKS = {
     "mazumder2025docgraphx":      {"pdf": "doc2graphx.pdf"},
     "pal2025icdar":               {"pdf": "icdar2025_hnu_challenge.pdf"},
 }
+
+# Title corrections keyed by DOI (lowercase, no https://doi.org/ prefix).
+# OpenAlex sometimes scrapes junk into a title (e.g. a figure's alt text).
+# The corrected title also drives the cite key and the Scholar-id match.
+TITLE_OVERRIDES = {
+    "10.1007/978-3-032-37676-3_40": "NoTeS-Bank: Benchmarking Vision-Language Models on Unstructured Academic and Scientific Note-Taking",
+}
+
+# Preprints superseded by a published version whose title changed, so the
+# title-based dedup cannot pair them. Keyed by DOI like TITLE_OVERRIDES.
+SUPERSEDED_DOIS = {
+    "10.48550/arxiv.2504.09249",  # NoTeS-Bank arXiv -> LNCS 2026
+}
 # ─────────────────────────────────────────────────────────────────────────────
+
+
+def bare_doi(work: dict) -> str:
+    doi = (work.get("doi") or "").lower()
+    return doi[len("https://doi.org/"):] if doi.startswith("https://doi.org/") else doi
+
+
+def apply_overrides(works: list) -> list:
+    """Fix known-bad titles and drop superseded preprints."""
+    kept = []
+    for work in works:
+        doi = bare_doi(work)
+        if doi in SUPERSEDED_DOIS:
+            print(f"  [override] Dropped superseded: '{work.get('title')}'")
+            continue
+        if doi in TITLE_OVERRIDES:
+            work["title"] = TITLE_OVERRIDES[doi]
+            print(f"  [override] Fixed title for {doi}")
+        kept.append(work)
+    return kept
 
 
 def load_scholar_ids() -> dict:
@@ -370,6 +403,9 @@ def main():
     print("📚 Fetching works...")
     works = fetch_all_works(OPENALEX_AUTHOR_ID)
     print(f"\n📄 Total works fetched: {len(works)}")
+
+    print("\n🩹 Applying title overrides...")
+    works = apply_overrides(works)
 
     print("\n🔧 Deduplicating preprints vs published versions...")
     works = deduplicate_works(works)
