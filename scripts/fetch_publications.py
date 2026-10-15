@@ -61,6 +61,15 @@ TITLE_OVERRIDES = {
     "10.1007/978-3-032-37676-3_40": "NoTeS-Bank: Benchmarking Vision-Language Models on Unstructured Academic and Scientific Note-Taking",
 }
 
+# Venue corrections keyed by DOI, for accepted papers OpenAlex still lists
+# as preprints. "type" is the BibTeX entry type to emit.
+VENUE_OVERRIDES = {
+    "10.48550/arxiv.2605.20436": {  # Lighting-aware -> accepted at WACV 2027
+        "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027)",
+        "type": "inproceedings",
+    },
+}
+
 # Preprints superseded by a published version whose title changed, so the
 # title-based dedup cannot pair them. Keyed by DOI like TITLE_OVERRIDES.
 SUPERSEDED_DOIS = {
@@ -305,9 +314,10 @@ def work_to_bibtex(work: dict, index: int, scholar_ids: dict = None) -> str:
     year      = work.get("publication_year", "")
     authors   = format_authors(work.get("authorships", []))
     venue, bib_type = get_venue(work)
-    doi       = work.get("doi", "") or ""
-    if doi.startswith("https://doi.org/"):
-        doi = doi[len("https://doi.org/"):]
+    doi       = bare_doi(work)
+    if doi in VENUE_OVERRIDES:
+        venue    = VENUE_OVERRIDES[doi]["venue"]
+        bib_type = VENUE_OVERRIDES[doi]["type"]
 
     arxiv_id = work.get("ids", {}).get("arxiv", "") or ""
     if arxiv_id.startswith("https://arxiv.org/abs/"):

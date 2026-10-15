@@ -5,6 +5,12 @@
 #   inline: an HTML string (supports <strong>, <a href>, emoji, etc.)
 # ─────────────────────────────────────────────────────────────────────────────
 
+- date: "2026-10-15"
+  inline: >
+    🎉 Our paper <strong>Lighting-aware Unified Model for Instance Segmentation</strong>
+    has been accepted at <strong>WACV 2027</strong>!
+    [<a href="https://arxiv.org/abs/2605.20436">arXiv</a>]
+
 - date: "2026-05-25"
   inline: >
     🎉 <strong>NoTeS-Bank</strong> has been accepted at

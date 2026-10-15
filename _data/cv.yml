@@ -7,7 +7,7 @@ cv:
   summary: >
     PhD student at Iowa State University researching computer vision, multi-modal representation
     learning, and agricultural AI. Previously a Research Assistant at Indian Statistical Institute,
-    Kolkata. Author of 16 peer-reviewed papers at venues including WACV, ICRA, ICPR, and ICDAR.
+    Kolkata. Author of 17 peer-reviewed papers at venues including WACV, ICRA, ICPR, and ICDAR.
 
   social_networks:
     - network: GitHub
@@ -53,7 +53,7 @@ cv:
         highlights:
           - "Advisor: Prof. Soumik Sarkar"
           - "EmbodiedMAE — multi-modal masked autoencoder for 3D Sorghum plant reconstruction from RGB, depth, and point cloud data"
-          - "Lighting-aware instance segmentation — custom Lighting Convolutional Attention (LCA) module extending SAM"
+          - "Lighting-aware instance segmentation — custom Lighting Convolutional Attention (LCA) module extending SAM (accepted at WACV 2027)"
           - "Seeing Seizures — large-scale benchmark of 10 video and 7 EEG models for rodent seizure detection and Racine severity grading (under review)"
 
       - company: Computer Vision & Pattern Recognition Unit (CVPRU), ISI Kolkata

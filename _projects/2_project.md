@@ -64,10 +64,10 @@ mIoU under lighting-variant (V) conditions — the lightweight LCA adapter recov
 
 ### Publications
 
-- Preprint (2026): _Lighting-aware Unified Model for Instance Segmentation_ — Liu, Das et al. (arXiv:2605.20436)
+- **WACV 2027** (accepted): _Lighting-aware Unified Model for Instance Segmentation_ — Liu, Das et al. ([arXiv:2605.20436](https://arxiv.org/abs/2605.20436))
 
 ### Status
 
-Preprint available. Experiments run on custom agricultural datasets and standard COCO benchmarks.
+Accepted at WACV 2027; preprint on [arXiv](https://arxiv.org/abs/2605.20436). Experiments run on custom agricultural datasets and standard COCO benchmarks.
 
 Work done at [SCSLab, Iowa State University](https://sites.google.com/view/scslab-isu/home).
