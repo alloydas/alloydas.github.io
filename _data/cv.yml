@@ -87,6 +87,18 @@ cv:
         awarder: Scientific Reports (Nature Portfolio)
         summary: Reviewer for Nature Portfolio's multidisciplinary open-access journal.
 
+      - title: Peer Reviewer
+        date: 2026
+        awarder: IEEE INSTCon 2026
+        summary: Reviewer for the 2026 IEEE 1st International Conference on Instrumentation, NIT Rourkela.
+
+    Certificates:
+      - name: Certificate of Appreciation — Reviewer, IEEE INSTCon 2026
+        issuer: IEEE Instrumentation and Measurement Society, Rourkela Chapter & NIT Rourkela
+        date: 2026-07-25
+        url: /assets/pdf/certificates/instcon2026_reviewer.pdf
+        icon: fa-solid fa-award
+
     Skills:
       - name: Computer Vision
         level: Expert
