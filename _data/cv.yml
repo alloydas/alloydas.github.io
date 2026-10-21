@@ -54,7 +54,7 @@ cv:
           - "Advisor: Prof. Soumik Sarkar"
           - "EmbodiedMAE — multi-modal masked autoencoder for 3D Sorghum plant reconstruction from RGB, depth, and point cloud data"
           - "Lighting-aware instance segmentation — custom Lighting Convolutional Attention (LCA) module extending SAM (accepted at WACV 2027)"
-          - "Seeing Seizures — large-scale benchmark of 10 video and 7 EEG models for rodent seizure detection and Racine severity grading (under review)"
+          - "Seeing Seizures — large-scale benchmark of 10 video and 7 EEG models for rodent seizure detection and Racine severity grading (arXiv:2610.22566, under review)"
 
       - company: Computer Vision & Pattern Recognition Unit (CVPRU), ISI Kolkata
         position: Research Assistant

@@ -45,6 +45,7 @@ PREPRINT_SOURCES = {"arxiv", "ssrn", "biorxiv", "medrxiv", "researchsquare"}
 MANUAL_LINKS = {
     "liu2026lightingaware":       {"arxiv": "2605.20436"},
     "das2026notesbank":           {"arxiv": "2504.09249"},
+    "das2026seeing":              {"arxiv": "2610.22566"},
     "das2025faster":              {"arxiv": "2308.02905"},
     "das2024fasttextspotter":     {"arxiv": "2408.14998"},
     "das2024diving":              {"arxiv": "2310.00558"},
