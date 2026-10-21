@@ -14,7 +14,7 @@ chart:
 **Authors:** Qisai Liu\*, **Alloy Das**\*, Zhanhong Jiang, Joshua R. Waite, Aditya Balu, Adarsh Krishnamurthy, Soumik Sarkar
 <br><small>Iowa State University · \*Equal contribution</small>
 
-**Accepted at WACV 2027** · [arXiv:2605.20436](https://arxiv.org/abs/2605.20436) · [PDF](https://arxiv.org/pdf/2605.20436)
+**Accepted at WACV 2027** · [arXiv:2605.20436](https://arxiv.org/abs/2605.20436) · [PDF](https://arxiv.org/pdf/2605.20436) · [LinkedIn post](https://www.linkedin.com/posts/alloy-das-a512a916b_wacv2027-computervision-instancesegmentation-share-7516522194076872704-uib_/)
 
 {% include figure.liquid loading="eager" path="assets/img/lca_pipeline.jpg" class="img-fluid rounded z-depth-1" caption="PLAP-LCA. Clean and lighting-variant images share SAM's frozen ViT-B encoder with LCA modules injected into the last two blocks. Only the LCA weights, per-block scalar gates and the mask decoder are trained, with segmentation and consistency losses." %}
 

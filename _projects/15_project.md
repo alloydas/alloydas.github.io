@@ -14,7 +14,7 @@ chart:
 **Authors:** **Alloy Das**\*, Shreyan Ganguly, Nyzil Massey, Hung Phi Doan, Zhanhong Jiang, Thimmasettappa Thippeswamy, Soumik Sarkar
 <br><small>Iowa State University · Arkansas State University (N. Massey) · \*Corresponding author</small>
 
-**Status:** under review (WACV 2027, Applications track) · [arXiv:2610.22566](https://arxiv.org/abs/2610.22566) · [PDF](https://arxiv.org/pdf/2610.22566) · [Project page](https://alloydas.github.io/EEG-seizure-classification/) · [Code](https://github.com/alloydas/EEG-seizure-classification)
+**Status:** under review (WACV 2027, Applications track) · [arXiv:2610.22566](https://arxiv.org/abs/2610.22566) · [PDF](https://arxiv.org/pdf/2610.22566) · [Project page](https://alloydas.github.io/EEG-seizure-classification/) · [Code](https://github.com/alloydas/EEG-seizure-classification) · [LinkedIn post](https://www.linkedin.com/posts/alloy-das-a512a916b_computervision-deeplearning-neuroscience-share-7518759924739227648-UAa0/)
 
 {% include figure.liquid loading="eager" path="assets/img/seeing_seizures.jpg" class="img-fluid rounded z-depth-1" caption="Overview: synchronized video–EEG cohort (left) and the benchmark: clip extraction, video-only and EEG-only model families, and held-out-animal generalization (right)." %}
 
